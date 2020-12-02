@@ -1,8 +1,7 @@
 import { sendGenesis } from "arverify";
-import { JWKInterface } from "arweave/node/lib/wallet";
 
-const jwk: JWKInterface = JSON.parse(process.env.JWK);
-const endpoint: string = process.env.ENDPOINT;
+const jwk = JSON.parse(process.env.JWK);
+const endpoint = process.env.ENDPOINT;
 
 async function start() {
   const genesisTransaction = await sendGenesis(jwk, endpoint);
