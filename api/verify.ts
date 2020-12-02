@@ -28,6 +28,7 @@ export default function (req: NowRequest, res: NowResponse) {
       status: "error",
       message: "address is reqired"
     });
+    return;
   }
 
   // Check if the address is verified
@@ -37,6 +38,7 @@ export default function (req: NowRequest, res: NowResponse) {
       status: "success",
       message: "already verified",
     });
+    return;
   }
 
   // Check if a tip has been received
@@ -47,6 +49,7 @@ export default function (req: NowRequest, res: NowResponse) {
       status: "error",
       message: "no tip"
     });
+    return;
   }
 
   // Return an authentication uri
