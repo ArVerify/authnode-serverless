@@ -2,11 +2,13 @@
   "name": "authnode-vercel",
   "version": "1.0.0",
   "description": "A serverless ArVerify Authentication Node",
-  "main": "index.js",
   "repository": "https://github.com/t8/authnode-vercel.git",
   "author": "Tate Berenbaum <tate@arceum.co>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "tsc index.ts --esModuleInterop true --resolveJsonModule true --outDir dist"
+  },
   "dependencies": {
     "@vercel/node": "^1.8.5",
     "arverify": "^0.0.1",
