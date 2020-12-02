@@ -6,6 +6,9 @@
   "author": "Tate Berenbaum <tate@arceum.co>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "node index.js"
+  },
   "dependencies": {
     "@vercel/node": "^1.8.5",
     "arverify": "^0.0.1",
