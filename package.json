@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@vercel/node": "^1.8.5",
     "arverify": "^0.0.1",
     "arweave": "^1.10.0",
     "googleapis": "^65.0.0",
