@@ -7,7 +7,7 @@ import { isVerified, tipReceived } from "arverify";
 export default function (req: NowRequest, res: NowResponse) {
   const address: string | string[] = req.query.address;
   const returnURI: string | string[] = req.query.return;
-  const jwk: JWKInterface = JSON.parse(process.env.jwk);
+  const jwk: JWKInterface = JSON.parse(process.env.JWK);
 
   const client: Arweave = new Arweave({
     host: "arweave.net",
@@ -16,9 +16,9 @@ export default function (req: NowRequest, res: NowResponse) {
   });
 
   const oauthClient = new google.auth.OAuth2(
-    process.env.gClientID,
-    process.env.gClientSecret,
-    process.env.endpoint + (process.env.endpoint.endsWith("/") ? "" : "/") + "verify/callback"
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+    process.env.ENDPOINT + (process.env.ENDPOINT.endsWith("/") ? "" : "/") + "verify/callback"
   );
 
   // Check if address was passed in

@@ -10,7 +10,7 @@ export default async function (req: NowRequest, res: NowResponse) {
   const address: string | string[] = JSON.parse(state).address;
   // @ts-expect-error
   const returnURI: string | string[] = JSON.parse(state).returnUri;
-  const jwk: JWKInterface = JSON.parse(process.env.jwk);
+  const jwk: JWKInterface = JSON.parse(process.env.JWK);
 
   const client: Arweave = new Arweave({
     host: "arweave.net",
