@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/ping",
+      "destination": "/api/ping"
+    },
+    {
+      "source": "/verify",
+      "destination": "/api/verify"
+    },
+    {
+      "source": "/verify/callback",
+      "destination": "/api/verify/callback"
+    }
+  ]
+}
