@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@vercel/node": "^1.8.5",
-    "arverify": "^0.0.1",
+    "arverify": "^0.0.2",
     "arweave": "^1.10.0",
-    "googleapis": "^65.0.0",
-    "smartweave": "^0.4.12"
+    "googleapis": "^66.0.0",
+    "smartweave": "^0.4.13"
   }
 }

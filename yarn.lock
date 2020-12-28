@@ -64,10 +64,10 @@ arrify@^2.0.0:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
-arverify@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/arverify/-/arverify-0.0.1.tgz#c5080a34b1b04b41889a0523b463373cd3764482"
-  integrity sha512-QPCdKNXb2bOuR2fae7bOZElZPT86v9vzrodF8OfZWSzIXGiYAPpjR+QIeC5Y9TwQRFnsp3lgPdVJkp8Z7jXk8Q==
+arverify@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/arverify/-/arverify-0.0.2.tgz#ad1b82afb92c2d935e764f59b4f0caa32d6789a0"
+  integrity sha512-g2dXmlRDP7FwMqG9g5A5M16vm3s0oGWKQCLK0yV7D3CxSceLioyS78rVR/FCiOQ0NDlQPE+5f1KkPBj2Fevzbw==
   dependencies:
     ar-gql "^0.0.1"
     arweave "^1.9.1"
@@ -268,10 +268,10 @@ googleapis-common@^4.4.1:
     url-template "^2.0.8"
     uuid "^8.0.0"
 
-googleapis@^65.0.0:
-  version "65.0.0"
-  resolved "https://registry.yarnpkg.com/googleapis/-/googleapis-65.0.0.tgz#de261460548bd4bb63b9ea3765415577d17f8c8c"
-  integrity sha512-dcfZVkML8H6mPAsph0hgfyRQYKJpw2XjKchAXx5YEfDYWU7021Mpzaf+ejNSipa3QmcfOLOcWg6sUr0I7M4jjQ==
+googleapis@^66.0.0:
+  version "66.0.0"
+  resolved "https://registry.yarnpkg.com/googleapis/-/googleapis-66.0.0.tgz#008062d06b13954bd3a0425c17e8f8396e884957"
+  integrity sha512-jdEleRoyo/AeJZjKGC7Z2mHgochn2vR2JKqey6kydRkIBmCZxoQKLisRR4H8CRYZeEd6+c8Ns/LzS1S7qUjoFw==
   dependencies:
     google-auth-library "^6.0.0"
     googleapis-common "^4.4.1"
@@ -400,10 +400,21 @@ safer-buffer@^2.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-smartweave@^0.4.10, smartweave@^0.4.12:
+smartweave@^0.4.10:
   version "0.4.12"
   resolved "https://registry.yarnpkg.com/smartweave/-/smartweave-0.4.12.tgz#e9c770867ab5eb36940637db264620974e2c19b6"
   integrity sha512-EMaRLV7ZT0kafU+XDlNH7EBKIJO1PfRXe4yOKu1IVN279uMHCRaEywioo7eHQ2WjCryr168X07ndpFA6l1fgkA==
+  dependencies:
+    "@weavery/clarity" "^0.1.5"
+    arweave "^1.9.1"
+    bignumber.js "^9.0.1"
+    loglevel "^1.7.0"
+    yargs "^16.1.0"
+
+smartweave@^0.4.13:
+  version "0.4.13"
+  resolved "https://registry.yarnpkg.com/smartweave/-/smartweave-0.4.13.tgz#d5da11332199acd7e3548b8d553f68d52b60c0e9"
+  integrity sha512-xf+ACoQ37sejfYJvl+G4Glc69P3m5iT29kwRuC7w8rBRSdhyZeHSssJMbYpFzaQtu4AcGy1YUnyPh+1iPQv3hQ==
   dependencies:
     "@weavery/clarity" "^0.1.5"
     arweave "^1.9.1"
