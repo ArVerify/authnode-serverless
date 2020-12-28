@@ -1,4 +1,4 @@
-const sendGenesis = require("arverify").sendGenesis();
+const sendGenesis = require("arverify").sendGenesis;
 
 const jwk = JSON.parse(process.env.JWK);
 const endpoint = process.env.ENDPOINT;
