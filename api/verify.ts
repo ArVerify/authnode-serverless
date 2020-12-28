@@ -4,7 +4,7 @@ import { JWKInterface } from 'arweave/node/lib/wallet';
 import { google } from "googleapis";
 import { isVerified, tipReceived } from "arverify";
 
-export default function (req: NowRequest, res: NowResponse) {
+export default async function (req: NowRequest, res: NowResponse) {
   const address: string | string[] = req.query.address;
   const returnURI: string | string[] = req.query.return;
   const jwk: JWKInterface = JSON.parse(process.env.JWK);
@@ -43,7 +43,7 @@ export default function (req: NowRequest, res: NowResponse) {
 
   // Check if a tip has been received
   // @ts-expect-error
-  if (!(await tipReceived(address), await client.wallets.jwkToAddress(jwk))) {
+  if (!(await tipReceived(address, await client.wallets.jwkToAddress(jwk)))) {
     res.statusCode = 400;
     res.send({
       status: "error",
